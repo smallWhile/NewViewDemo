@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="cn.zwz.newviewdemo.MainActivity">
+
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/bubbleseekbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        app:bsb_bubble_color="@android:color/transparent"
+        app:bsb_bubble_text_color="#ffffff"
+        app:bsb_bubble_text_size="0sp"
+        app:bsb_max="20000"
+        app:bsb_min="180"
+        app:bsb_progress="180"
+        app:bsb_second_track_color="@android:color/white"
+        app:bsb_section_count="1"
+        app:bsb_section_text_position="sides"
+        app:bsb_show_progress_in_float="false"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_track_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/numjd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="当前进度：0"
+        android:textColor="#FF9966"
+        android:textSize="20sp" />
+
+
+    <cn.zwz.newviewdemo.view.MoveView
+        android:id="@+id/move"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@color/colorAccent"
+        android:visibility="gone" />
+
+    <cn.zwz.newviewdemo.view.CurveChartColuli
+        android:id="@+id/line_curvechart_colu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
